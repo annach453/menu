@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Список специалистов</title>
+  <link rel="stylesheet" href="./css/style.min.css">
+</head>
+
+<body class="page">
+  <div class="page__wrapper">
+
+    <div class="search">
+
+      <p class="search__tip">Диаметр 14, внутренняя, хромированная, для стульев</p>
+      <div class="search__wrapper">
+        <input type="text" class="search__input" placeholder="Диаметр 14, внутренняя, хромированная, для стульев">
+        <span class="search__input-icon"></span>
+        <div class="search__filter filter">
+            <div class="filter__tabs">
+              <div class="filter__tab filter__tab--active" id="button-1">
+                <span class="filter__btn">Диаметр трубы</span>
+              </div>
+              <div class="filter__tab" id="button-2">
+                <span class="filter__btn">Тип изделия</span>
+              </div>
+              <div class="filter__tab" id="button-3">
+                <span class="filter__btn">Применение</span>
+              </div>
+              <div class="filter__tab" id="button-4">
+                <span class="filter__btn">Другое</span>
+              </div>
+            </div>
+
+            <div class="filter__content">
+
+              <div id="tab-1" class="filter__tab-content filter__tab-content--active">
+                <div class="filter__dia-wrapper">
+                  <input type="number" class="filter__dia" value="">мм
+                </div>
+                <div class="filter__text">
+                  <span class="filter__heading">Диапозон диаметра трубы</span>
+                </div>
+                <div class="filter__limits">
+                  <span class="filter__limit">min. <span class="filter__limit-value">4 мм</span></span>
+                  <span class="filter__limit">mаx. <span class="filter__limit-value">98 мм</span></span>
+                </div>
+              </div>
+
+              <div id="tab-2" class="filter__tab-content">
+                <label class="filter__label">
+                  <input type="checkbox" class="filter__checkbox" name="filter__product-type" value="inner" checked>
+                  <span class="filter__checkbox-title">Внутренние</span>
+                </label>
+                <label class="filter__label">
+                  <input type="checkbox" class="filter__checkbox" name="filter__product-type" value="outer">
+                  <span class="filter__checkbox-title">Наружные</span>
+                </label>
+                <label class="filter__label">
+                  <input type="checkbox" class="filter__checkbox" name="filter__product-type" value="thin-nail-head">
+                  <span class="filter__checkbox-title">С тонкой шляпкой</span>
+                </label>
+                <label class="filter__label">
+                  <input type="checkbox" class="filter__checkbox" name="filter__product-type" value="sphere">
+                  <span class="filter__checkbox-title">Сферические</span>
+                </label>
+                <label class="filter__label">
+                  <input type="checkbox" class="filter__checkbox" name="filter__product-type" value="carving">
+                  <span class="filter__checkbox-title">C резьбой</span>
+                </label>
+                <label class="filter__label">
+                  <input type="checkbox" class="filter__checkbox" name="filter__product-type" value="chromized">
+                  <span class="filter__checkbox-title">Хромированные</span>
+                </label>
+                <label class="filter__label">
+                  <input type="checkbox" class="filter__checkbox" name="filter__product-type" value="metal">
+                  <span class="filter__checkbox-title">Металлические</span>
+                </label>
+                <label class="filter__label">
+                  <input type="checkbox" class="filter__checkbox" name="filter__product-type" value="on-the-miter">
+                  <span class="filter__checkbox-title">Под углом</span>
+                </label>
+              </div>
+
+              <div id="tab-3" class="filter__tab-content">
+                <label class="filter__label">
+                  <input type="checkbox" class="filter__checkbox" name="filter__use" value="chair">
+                  <span class="filter__checkbox-title">Для стульев</span>
+                </label>
+                <label class="filter__label">
+                  <input type="checkbox" class="filter__checkbox" name="filter__use" value="remote-control">
+                  <span class="filter__checkbox-title">Заглушки ДУ</span>
+                </label>
+                <label class="filter__label">
+                  <input type="checkbox" class="filter__checkbox" name="filter__use" value="hole">
+                  <span class="filter__checkbox-title">Заглушки для отверстий</span>
+                </label>
+                <label class="filter__label">
+                  <input type="checkbox" class="filter__checkbox" name="filter__use" value="ball-valve">
+                  <span class="filter__checkbox-title">Для шаровых кранов</span>
+                </label>
+                <label class="filter__label">
+                  <input type="checkbox" class="filter__checkbox" name="filter__use" value="caps">
+                  <span class="filter__checkbox-title">Пробки</span>
+                </label>
+                <label class="filter__label">
+                  <input type="checkbox" class="filter__checkbox" name="filter__use" value="ellipsoidal">
+                  <span class="filter__checkbox-title">Эллипсоидные заглушки</span>
+                </label>
+                <label class="filter__label">
+                  <input type="checkbox" class="filter__checkbox" name="filter__use" value="pillar">
+                  <span class="filter__checkbox-title">Заглушки для столбов</span>
+                </label>
+                <label class="filter__label">
+                  <input type="checkbox" class="filter__checkbox" name="filter__use" value="corner">
+                  <span class="filter__checkbox-title">Заглушки для уголков</span>
+                </label>
+              </div>
+
+              <div id="tab-4" class="filter__tab-content">
+                <div class="filter__dia-wrapper">
+                    <input type="number" class="filter__dia" value="">мм
+                  </div>
+                  <div class="filter__text">
+                    <span class="filter__heading">Диапозон диаметра трубы</span>
+                  </div>
+                  <div class="filter__limits">
+                    <span class="filter__limit">min. <span class="filter__limit-value">4 мм</span></span>
+                    <span class="filter__limit">mаx. <span class="filter__limit-value">98 мм</span></span>
+                  </div>
+              </div>
+
+            </div>
+          </div>
+
+      </div>
+
+    </div>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
